@@ -30,6 +30,9 @@ typedef char char16_t; /* hack */
 
 #include "mex.h"
 #include <math.h>
+#ifndef M_PI // Fix
+    #define M_PI 3.14159265358979323846
+#endif
 
 /* aliases for the arguments */
 #define M    plhs[0]
